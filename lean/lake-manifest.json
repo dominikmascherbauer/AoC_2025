@@ -1,5 +1,5 @@
 {"version": "1.1.0",
  "packagesDir": ".lake/packages",
  "packages": [],
- "name": "AoC_2025_Lean",
+ "name": "aoc_lean",
  "lakeDir": ".lake"}
