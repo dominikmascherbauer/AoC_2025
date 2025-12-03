@@ -5,7 +5,7 @@ open AoC.Util
 
 namespace AoC.Day02
 
-def part1 (input: String) :=
+def part1 (input: String): Nat :=
   input.splitToList (· = ',')
   |>.map (fun range => (range.takeWhile (· ≠ '-') |>.trim, range.dropWhile (· ≠ '-') |>.drop 1 |>.trim))
   |>.map (fun (l,u) => ((l.toNat!, u.toNat!), (l.take (l.length/2) |>.toNat? |>.or (some 0) |>.get!, u.dropRight (u.length/2) |>.toNat!)))
@@ -33,7 +33,7 @@ def part1 (input: String) :=
 
 -/
 
-def part2 (input: String) :=
+def part2 (input: String): Nat :=
   input.splitToList (· = ',')
   |>.map (fun range => (range.takeWhile (· ≠ '-') |>.trim, range.dropWhile (· ≠ '-') |>.drop 1 |>.trim))
   |>.map (fun (l,u) => (
