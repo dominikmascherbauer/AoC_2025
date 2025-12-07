@@ -4,6 +4,7 @@ import AoC.Days.Day03
 import AoC.Days.Day04
 import AoC.Days.Day05
 import AoC.Days.Day06
+import AoC.Days.Day07
 
 
 def main (args : List String) : IO Unit := do
@@ -14,4 +15,5 @@ def main (args : List String) : IO Unit := do
   | ["4"] => AoC.Day04.run
   | ["5"] => AoC.Day05.run
   | ["6"] => AoC.Day06.run
+  | ["7"] => AoC.Day07.run
   | _ => IO.println "Usage: lake exe aoc <day>"
